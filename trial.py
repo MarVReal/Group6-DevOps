@@ -16,6 +16,7 @@ def get_location():
     }
     return location_data
 
-
+location_data = get_location()
 print("The user's IPv4 address and current location is as follows:")
-print(get_location())
+for key, value in location_data.items():
+    print(f"{key}: {value}")
