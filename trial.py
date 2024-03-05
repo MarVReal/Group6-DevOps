@@ -12,6 +12,8 @@ def get_location():
         "City": response.get("city"),
         "Region": response.get("region"),
         "Country": response.get("country_name"),
+	"ISP" : response.get("org"),
+	
         
     }
     return location_data
