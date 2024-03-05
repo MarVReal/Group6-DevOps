@@ -12,7 +12,11 @@ def get_location():
         "City": response.get("city"),
         "Region": response.get("region"),
         "Country": response.get("country_name"),
+	"Time Zone" : response.get("timezone"),
 	"ISP" : response.get("org"),
+	"Latitude" : response.get("latitude"),
+	"Longitude" :response.get("longitude"),
+
 	
         
     }
