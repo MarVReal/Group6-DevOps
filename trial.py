@@ -10,7 +10,7 @@ def test_getip():
 
 @app.route("/")
 def test_getlocation():
-    ip_address = getip()
+    ip_address = test_getip()
     response=requests.get(f'https://ipapi.co/{ip_address}/json/').json()
     location_data = {
         "IPv4 Address": ip_address, 
