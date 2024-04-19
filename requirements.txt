@@ -1,1 +1,7 @@
-flask
+# flake8 for linting
+flake8==4.0.1
+
+# pytest for testing
+pytest==6.2.5
+
+Flask
