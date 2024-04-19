@@ -21,5 +21,6 @@ def get_location():
 	    "ISP" : response.get("org"),
 	    "Latitude" : response.get("latitude"),
 	"Longitude" :response.get("longitude"),}
+	
     return location_data
 if __name__ == "__main__":app.run()
