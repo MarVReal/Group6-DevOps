@@ -4,13 +4,13 @@ import requests
 
 app = Flask(__name__)
 
-def test_get_ip():
+def test_getip():
     response = requests.get('https://api64.ipify.org?format=json').json()
     return response["ip"]
 
 @app.route("/")
-def test_get_location():
-    ip_address = get_ip()
+def test_getlocation():
+    ip_address = getip()
     response=requests.get(f'https://ipapi.co/{ip_address}/json/').json()
     location_data = {
         "IPv4 Address": ip_address, 
