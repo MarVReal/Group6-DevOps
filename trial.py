@@ -26,5 +26,4 @@ def get_location():
 	"Longitude" :response.get("longitude"), }
 >>>>>>> 51bbe46395bcca663061a9c2a7f74a243fb57a33
     return location_data
-if __name__ == "__main__":
-    app.run()
+if __name__ == "__main__":app.run()
