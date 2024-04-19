@@ -1,10 +1,7 @@
 from flask import Flask 
 from flask import request
 
-import requests
-
 app = Flask(__name__)
-
 
 def get_ip():
     response = requests.get('https://api64.ipify.org?format=json').json()
