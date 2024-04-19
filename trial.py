@@ -22,5 +22,4 @@ def get_location():
 	    "Latitude" : response.get("latitude"),
 	"Longitude" :response.get("longitude"), }
     return location_data
-if __name__ == "__main__":
-    app.run()
+if __name__ == "__main__":app.run()
