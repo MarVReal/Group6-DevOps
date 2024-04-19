@@ -20,7 +20,8 @@ def get_location():
 	    "Time Zone" : response.get("timezone"),
 	    "ISP" : response.get("org"),
 	    "Latitude" : response.get("latitude"),
-	"Longitude" :response.get("longitude"),}
+	"Longitude" :response.get("longitude"),
+    }
 	
     return location_data
 if __name__ == "__main__":app.run()
